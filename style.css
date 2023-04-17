@@ -109,6 +109,17 @@ section{
     display: none;
 }
 
+.section-title{
+    border-top: 1rem solid var(--main-color);
+    border-bottom: 1rem solid var(--main-color);
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 2rem;
+    font-size: 6rem;
+    text-transform: capitalize;
+}
+
 .header .flex .logo{
     font-size: 2.5rem;
     color: var(--black);
@@ -366,11 +377,64 @@ section{
     color: var(--white);
 }
 
+
+.about img{
+    width: 100%;
+    margin-bottom: 1.5rem0;
+}
+
+.about .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.about .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.about .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.about .box p{
+    padding: 1rem 0;
+    line-height: 1.8rem;
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 
 @media(max-width: 991px){
     html{
         font-size: 55%;
+    }
+    .section-title{
+        font-size: 5rem;
     }
 }
 @media(max-width: 768px){
@@ -404,10 +468,18 @@ section{
         flex-flow: column;
         text-align: center;
     }
+    .section-title{
+        font-size: 4rem;
+        padding: 4rem 2rem;
+    }
 }
+
 
 @media (max-width:450px){
     html{
       font-size: 50%;
+    }
+    .section-title{
+        font-size: 3.5rem;
     }
 }
